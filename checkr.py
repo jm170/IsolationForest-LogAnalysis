@@ -77,7 +77,7 @@ def analyze_and_export(input_log_file):
                         log_writer.writerow(entry)
                         vec_writer.writerow([anomaly_counter] + avg_vec.flatten().tolist())
 
-    print(f"Done! Found {anomaly_counter} anomalies.")
+    print(f"Identified {anomaly_counter} anomalies.")
 
 if __name__ == "__main__":
     analyze_and_export('access.log')
